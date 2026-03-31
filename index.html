@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zainul Arifin</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <style>
+      body {
+        background: #020617;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Blur Background */
+      .bg-blur {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+      }
+      .blob {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        filter: blur(120px);
+        opacity: 0.5;
+      }
+
+      /* Cursor Glow */
+      .cursor-glow {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 70%);
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      /* Glass */
+      .glass {
+        backdrop-filter: blur(20px);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.3s;
+      }
+      .glass:hover {
+        transform: translateY(-5px) scale(1.03);
+      }
+
+      .card {
+        backdrop-filter: blur(20px);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 20px;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent, rgba(59,130,246,0.3), transparent);
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .card:hover::before {
+        opacity: 1;
+      }
+
+      .card:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 20px 40px rgba(59,130,246,0.3);
+      }
+
+      .card:hover {
+        transform: translateY(-5px) scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
