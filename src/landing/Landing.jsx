@@ -416,7 +416,7 @@ export default function Landing() {
 
                 <h3 className="text-3xl font-bold mb-3">Contact Me</h3>
                 <p className="text-gray-400 text-sm mb-6">
-                Feel free to reach out for collaboration or project inquiry 🚀
+                Feel free to reach out for collaboration or project inquiry
                 </p>
 
                 {/* CONTACT INFO */}
