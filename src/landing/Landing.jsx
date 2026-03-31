@@ -13,12 +13,37 @@ import {
   Server,
   Cpu,
   Network,
-  Layers, } from "lucide-react";
+  Layers, 
+  Mail, 
+  Phone, 
+  Copy,  
+  MessageCircle,
+} from "lucide-react";
 
 
 export default function Landing() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("about");
+    const [copied, setCopied] = useState(false);
+
+    const email = "arifin281297@gmail.com";
+    const phone = "081388189796";
+
+    const copyEmail = async () => {
+        try {
+            await navigator.clipboard.writeText(email);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 1500);
+        } catch (err) {
+            console.log("Copy failed", err);
+        }
+    };
+
+    // const copyEmail = () => {
+    //     navigator.clipboard.writeText(email);
+    //     setCopied(true);
+    //     setTimeout(() => setCopied(false), 1500);
+    // };
 
     const skills = [
     { name: "HTML", icon: Globe, color: "orange" },
@@ -243,13 +268,13 @@ export default function Landing() {
                     key={i}
                     className="group glass p-4 rounded-xl border border-white/10 hover:scale-105 hover:border-blue-400/40 transition duration-300 shadow-md hover:shadow-blue-500/20 flex flex-col items-center gap-2"
                     >
-                    <div className="p-3 rounded-full bg-white/5 group-hover:bg-blue-500/10 transition">
-                        <Icon className="text-blue-400 group-hover:scale-110 transition" size={22} />
-                    </div>
+                        <div className="p-3 rounded-full bg-white/5 group-hover:bg-blue-500/10 transition">
+                            <Icon className="text-blue-400 group-hover:scale-110 transition" size={22} />
+                        </div>
 
-                    <span className="text-sm font-medium text-gray-200 group-hover:text-white">
-                        {skill.name}
-                    </span>
+                        <span className="text-sm font-medium text-gray-200 group-hover:text-white">
+                            {skill.name}
+                        </span>
                     </div>
                 );
                 })}
@@ -292,11 +317,11 @@ export default function Landing() {
                         <div className="p-2 rounded-lg bg-purple-500/20">
                             <Code size={20} className="text-purple-400" />
                         </div>
-                        <h4 className="font-bold text-lg">Freelance Web Developer</h4>
+                        <h4 className="font-bold text-lg">PT Dipara Prima Sentosa</h4>
                     </div>
 
                     <p className="text-blue-400 text-sm mb-2">
-                        Full Stack Developer
+                        Freelance Full Stack Developer
                     </p>
 
                     <p className="text-gray-400 text-sm leading-relaxed">
@@ -381,12 +406,82 @@ export default function Landing() {
             </div>
         </section>
 
-        <section id="contact" className="py-12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
-            <div className="glass max-w-md mx-auto">
-            <h3 className="text-2xl font-bold mb-3">Contact</h3>
-            <p className="text-gray-400 text-sm">arifin281297@gmail.com</p>
-            <p className="text-gray-400 text-sm mb-4">081388189796</p>
-            <a href="mailto:arifin281297@gmail.com" className="px-5 py-2 bg-blue-500 rounded-lg">Email Me</a>
+        <section
+            id="contact"
+            className="py-16 px-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            >
+            <div className="glass max-w-xl mx-auto p-8 rounded-2xl border border-white/10">
+
+                <h3 className="text-3xl font-bold mb-3">Contact Me</h3>
+                <p className="text-gray-400 text-sm mb-6">
+                Feel free to reach out for collaboration or project inquiry 🚀
+                </p>
+
+                {/* CONTACT INFO */}
+                <div className="space-y-3 mb-6 text-sm text-gray-300">
+
+                <div className="flex items-center justify-center gap-2">
+                    <Mail size={16} className="text-blue-400" />
+                    {email}
+                    <button
+                    onClick={copyEmail}
+                    className="ml-2 text-xs px-2 py-1 bg-white/10 rounded hover:bg-white/20 transition"
+                    >
+                    <Copy size={14} />
+                    </button>
+                </div>
+
+                <div className="flex items-center justify-center gap-2">
+                    <Phone size={16} className="text-green-400" />
+                    {phone}
+                </div>
+
+                </div>
+
+                {copied && (
+                <p className="text-green-400 text-xs mb-3">
+                    Email copied to clipboard ✅
+                </p>
+                )}
+
+                {/* BUTTONS */}
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+
+                <a
+                    href={`mailto:${email}`}
+                    className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-red-600 rounded-lg transition"
+                >
+                    <Mail size={16} /> Email Me
+                </a>
+
+                <a
+                    href={`https://wa.me/6281388189796`}
+                    target="_blank"
+                    className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-green-600 rounded-lg transition"
+                >
+                    <MessageCircle size={16} /> WhatsApp
+                </a>
+
+                <a
+                    href={`https://github.com/`}
+                    target="_blank"
+                    className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-slate-800 rounded-lg transition"
+                >
+                    <MessageCircle size={16} /> Github
+                </a>
+
+                <a
+                    href={`https://linkedin.com/`}
+                    target="_blank"
+                    className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-sky-700 rounded-lg transition"
+                >
+                    <MessageCircle size={16} /> Linkedin
+                </a>
+
+                </div>
+
             </div>
         </section>
 
