@@ -465,7 +465,7 @@ export default function Landing() {
                 </a>
 
                 <a
-                    href={`https://github.com/`}
+                    href={`https://github.com/arifin281297`}
                     target="_blank"
                     className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-slate-800 rounded-lg transition"
                 >
@@ -473,7 +473,7 @@ export default function Landing() {
                 </a>
 
                 <a
-                    href={`https://linkedin.com/`}
+                    href={`https://id.linkedin.com/in/ahmad-zainul-arifin-511166378?trk=people-guest_people_search-card`}
                     target="_blank"
                     className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-sky-700 rounded-lg transition"
                 >
@@ -486,7 +486,7 @@ export default function Landing() {
         </section>
 
         <footer className="text-center text-gray-500 text-sm py-6">
-            © 2026 Zainul Arifin
+            © 2026 Ahmad Zainul Arifin
         </footer>
     </div>
 
