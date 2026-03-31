@@ -200,6 +200,7 @@ export default function Landing() {
             <div className="glass">HTML</div>
             <div className="glass">CSS</div>
             <div className="glass">JavaScript</div>
+            <div className="glass">JQuery</div>
             <div className="glass">React.JS</div>
             <div className="glass">Next.JS</div>
             <div className="glass">Node.JS</div>
