@@ -1,12 +1,41 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ariImg from './../assets/ari.png'
+import ariImg from './../assets/ari.png';
+import { 
+  Briefcase, 
+  Code,
+  Code2,
+  FileCode,
+  Braces,
+  Database,
+  Globe,
+  Server,
+  Cpu,
+  Network,
+  Layers, } from "lucide-react";
 
 
 export default function Landing() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("about");
+
+    const skills = [
+    { name: "HTML", icon: Globe, color: "orange" },
+    { name: "CSS", icon: Layers, color: "blue" },
+    { name: "JavaScript", icon: Braces, color: "yellow" },
+    { name: "JQuery", icon: Code2, color: "blue" },
+    { name: "React.JS", icon: Cpu, color: "cyan" },
+    { name: "Next.JS", icon: Server, color: "black" },
+    { name: "Node.JS", icon: Server, color: "green" },
+    { name: "PHP", icon: FileCode, color: "purple" },
+    { name: "CodeIgniter", icon: Code2, color: "red" },
+    { name: "Laravel", icon: Layers, color: "red" },
+    { name: "Golang", icon: Cpu, color: "sky" },
+    { name: "MySQL", icon: Database, color: "blue" },
+    { name: "PostgreSQL", icon: Database, color: "indigo" },
+    { name: "Networking", icon: Network, color: "gray" },
+    ];
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -144,7 +173,7 @@ export default function Landing() {
             </button>
 
             <ul className="flex flex-col items-center justify-center h-screen gap-8 text-lg">
-                {["about", "skills", "projects", "contact"].map((item) => (
+                {["about", "skills", "experience", "projects", "contact"].map((item) => (
                 <li key={item}>
                     <a
                     href={`#${item}`}
@@ -179,7 +208,7 @@ export default function Landing() {
             <h2 className="text-3xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Hi, I'm Ahmad Zainul Arifin
             </h2>
-            <p className="text-gray-400 text-sm md:text-lg mb-6">Full Stack Developer</p>
+            <p className="text-gray-400 text-sm md:text-lg mb-6">Full Stack Developer & IT Support</p>
             <a href="#contact" className="px-6 py-3 rounded-xl bg-blue-500/80 hover:bg-blue-600 transition shadow-lg hover:shadow-blue-500/30">
             Hire Me
             </a>
@@ -189,28 +218,121 @@ export default function Landing() {
             <div className="glass text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">About Me</h3>
             <p className="text-gray-400 text-sm md:text-base">
-                Full Stack Developer dengan pengalaman 3 tahun di IT Support, Web Dev, dan Networking.
+                Saya adalah seorang profesional di bidang IT dengan pengalaman dalam pengembangan dan pemeliharaan sistem. Memiliki kemampuan dalam troubleshooting, networking, serta pengembangan aplikasi web. Saya terbiasa bekerja secara tim maupun individu dengan fokus pada hasil yang optimal dan efisien. Saat ini saya terus mengembangkan kemampuan di bidang full stack development.
             </p>
             </div>
         </section>
 
-        <section id="skills" className="py-12 px-4" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Skills</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <div className="glass">HTML</div>
-            <div className="glass">CSS</div>
-            <div className="glass">JavaScript</div>
-            <div className="glass">JQuery</div>
-            <div className="glass">React.JS</div>
-            <div className="glass">Next.JS</div>
-            <div className="glass">Node.JS</div>
-            <div className="glass">PHP</div>
-            <div className="glass">CodeIgniter</div>
-            <div className="glass">Laravel</div>
-            <div className="glass">Golang</div>
-            <div className="glass">MySQL</div>
-            <div className="glass">PostgreSQL</div>
-            <div className="glass">Networking</div>
+        <section
+            id="skills"
+            className="py-14 px-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            >
+            <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center">
+                Skills
+            </h3>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 max-w-5xl mx-auto">
+
+                {skills.map((skill, i) => {
+                const Icon = skill.icon;
+
+                return (
+                    <div
+                    key={i}
+                    className="group glass p-4 rounded-xl border border-white/10 hover:scale-105 hover:border-blue-400/40 transition duration-300 shadow-md hover:shadow-blue-500/20 flex flex-col items-center gap-2"
+                    >
+                    <div className="p-3 rounded-full bg-white/5 group-hover:bg-blue-500/10 transition">
+                        <Icon className="text-blue-400 group-hover:scale-110 transition" size={22} />
+                    </div>
+
+                    <span className="text-sm font-medium text-gray-200 group-hover:text-white">
+                        {skill.name}
+                    </span>
+                    </div>
+                );
+                })}
+
+            </div>
+        </section>
+
+        <section id="experience" className="py-12 px-4" data-aos="fade-up" data-aos-delay="250">
+            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+                Experience
+            </h3>
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+                {/* Experience 1 */}
+                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-blue-500/40 transition duration-300 shadow-lg hover:shadow-blue-500/20">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="p-2 rounded-lg bg-blue-500/20">
+                            <Briefcase size={20} className="text-blue-400" />
+                        </div>
+                        <h4 className="font-bold text-lg">PT RDN Artha Grafika</h4>
+                    </div>
+
+                    <p className="text-blue-400 text-sm mb-2">
+                        Full Stack Developer & IT Support
+                    </p>
+
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                        Mengembangkan aplikasi web System Management Perusahaan dan menangani troubleshooting jaringan serta support user internal.
+                    </p>
+
+                    <span className="text-xs text-gray-500 mt-3 block">
+                        2023 - Sekarang
+                    </span>
+                </div>
+
+                {/* Experience 2 */}
+                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-purple-500/40 transition duration-300 shadow-lg hover:shadow-purple-500/20">
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="p-2 rounded-lg bg-purple-500/20">
+                            <Code size={20} className="text-purple-400" />
+                        </div>
+                        <h4 className="font-bold text-lg">Freelance Web Developer</h4>
+                    </div>
+
+                    <p className="text-blue-400 text-sm mb-2">
+                        Full Stack Developer
+                    </p>
+
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                        Membangun website company profile menggunakan PHP, Bootstrap, jQuery, dan MySQL untuk berbagai client termasuk PT Dipara Prima Sentosa.
+                    </p>
+
+                    <span className="text-xs text-gray-500 mt-3 block">
+                        2025 - 2026
+                    </span>
+                </div>
+
+                {/* Experience 3 */}
+                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-pink-500/40 transition duration-300 shadow-lg hover:shadow-pink-500/20">
+                    <div className="flex items-center gap-3 mb-3">
+                        {/* <div className="p-2 rounded-lg bg-pink-500/20">
+                            <Settings size={20} className="text-pink-400" />
+                        </div> */}
+                        <div className="p-2 rounded-lg bg-blue-500/20">
+                            <Briefcase size={20} className="text-blue-200" />
+                        </div>
+                        <h4 className="font-bold text-lg">PT SoftOrb Technology Indonesia</h4>
+                    </div>
+
+                    <p className="text-blue-400 text-sm mb-2">
+                        IT Support / Maintenance
+                    </p>
+
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                        Maintenance sistem, troubleshooting jaringan, dan support operasional user internal perusahaan.
+                    </p>
+
+                    <span className="text-xs text-gray-500 mt-3 block">
+                        2018 - 2023
+                    </span>
+                </div>
+
             </div>
         </section>
 
@@ -227,40 +349,34 @@ export default function Landing() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
 
                 {/* Project 1 */}
-                <div className="card">
-                    <a
-                    href="https://assyukroniyah.id/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline"
-                    >
-                        <h4 className="font-bold">
-                            Web SMPI Assyukroniyah
-                        </h4>
-                        <p className="text-gray-400 text-sm">
-                            System Management Of School
-                        </p>
-                    </a>
-                </div>
+                <a
+                href="https://assyukroniyah.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card block p-4 hover:scale-105 transition duration-300 cursor-pointer"
+                >
+                <h4 className="font-bold text-blue-400 hover:underline">
+                    Web SMPI Assyukroniyah
+                </h4>
+                <p className="text-gray-400 text-sm">
+                    System Management Of School
+                </p>
+                </a>
 
                 {/* Project 2 */}
-                <div className="card">
-                    <a
-                    href="https://dipara.co.id/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline"
-                    >
-                        <h4 className="font-bold">
-                            
-                            Web Dipara
-                            
-                        </h4>
-                        <p className="text-gray-400 text-sm">
-                            Consulting And Coaching
-                        </p>
-                    </a>
-                </div>
+                <a
+                href="https://dipara.co.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card block p-4 hover:scale-105 transition duration-300 cursor-pointer"
+                >
+                <h4 className="font-bold text-blue-400 hover:underline">
+                    Web Dipara
+                </h4>
+                <p className="text-gray-400 text-sm">
+                    Consulting And Coaching
+                </p>
+                </a>
 
             </div>
         </section>
