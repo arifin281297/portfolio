@@ -469,7 +469,7 @@ export default function Landing() {
                     target="_blank"
                     className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-slate-800 rounded-lg transition"
                 >
-                    <MessageCircle size={16} /> Github
+                    <Code size={16} /> Github
                 </a>
 
                 <a
@@ -477,7 +477,7 @@ export default function Landing() {
                     target="_blank"
                     className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-sky-700 rounded-lg transition"
                 >
-                    <MessageCircle size={16} /> Linkedin
+                    <Code2 size={16} /> Linkedin
                 </a>
 
                 </div>
