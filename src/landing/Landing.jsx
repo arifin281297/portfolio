@@ -39,12 +39,6 @@ export default function Landing() {
         }
     };
 
-    // const copyEmail = () => {
-    //     navigator.clipboard.writeText(email);
-    //     setCopied(true);
-    //     setTimeout(() => setCopied(false), 1500);
-    // };
-
     const skills = [
     { name: "HTML", icon: Globe, color: "orange" },
     { name: "CSS", icon: Layers, color: "blue" },
@@ -234,8 +228,27 @@ export default function Landing() {
             Hi, I'm Ahmad Zainul Arifin
             </h2>
             <p className="text-gray-400 text-sm md:text-lg mb-6">Full Stack Developer & IT Support</p>
-            <a href="#contact" className="px-6 py-3 rounded-xl bg-blue-500/80 hover:bg-blue-600 transition shadow-lg hover:shadow-blue-500/30">
-            Hire Me
+            <a
+                href="#contact"
+                className="relative inline-flex items-center justify-center px-7 py-3 rounded-xl 
+                bg-gradient-to-r from-blue-500 to-purple-500 
+                text-white font-semibold
+                shadow-lg shadow-blue-500/30
+                hover:shadow-purple-500/40
+                hover:scale-105
+                active:scale-95
+                transition-all duration-300
+                overflow-hidden group"
+                >
+                {/* glow effect */}
+                <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+
+                {/* animated shine */}
+                <span className="absolute -left-10 top-0 w-8 h-full bg-white/20 skew-x-12 group-hover:translate-x-[250%] transition duration-700"></span>
+
+                <span className="relative z-10">
+                    Hire Me
+                </span>
             </a>
         </section>
 
@@ -453,7 +466,7 @@ export default function Landing() {
                     href={`mailto:${email}`}
                     className="flex items-center justify-center gap-2 px-5 py-2 hover:bg-red-600 rounded-lg transition"
                 >
-                    <Mail size={16} /> Email Me
+                    <Mail size={16} /> Email
                 </a>
 
                 <a
