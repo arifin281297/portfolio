@@ -129,7 +129,7 @@ export default function Landing() {
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6 text-sm">
-                {["about", "skills", "projects", "contact"].map((item) => (
+                {["about", "skills", "experience","education", "projects", "contact"].map((item) => (
                 <li key={item}>
                     <a
                     href={`#${item}`}
@@ -192,7 +192,7 @@ export default function Landing() {
             </button>
 
             <ul className="flex flex-col items-center justify-center h-screen gap-8 text-lg">
-                {["about", "skills", "experience", "projects", "contact"].map((item) => (
+                {["about", "skills", "experience","education", "projects", "contact"].map((item) => (
                 <li key={item}>
                     <a
                     href={`#${item}`}
@@ -295,80 +295,111 @@ export default function Landing() {
             </div>
         </section>
 
-        <section id="experience" className="py-12 px-4" data-aos="fade-up" data-aos-delay="250">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+        <section 
+            id="experience" 
+            className="py-16 px-4" 
+            data-aos="fade-up"
+        >
+            <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center">
                 Experience
             </h3>
 
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="relative max-w-4xl mx-auto">
 
-                {/* Experience 1 */}
-                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-blue-500/40 transition duration-300 shadow-lg hover:shadow-blue-500/20">
-                    <div className="flex items-center gap-3 mb-3">
-                        <div className="p-2 rounded-lg bg-blue-500/20">
-                            <Briefcase size={20} className="text-blue-400" />
-                        </div>
-                        <h4 className="font-bold text-lg">PT RDN Artha Grafika</h4>
+                {/* LINE */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-white/10"></div>
+
+                {/* ITEM 1 */}
+                <div className="mb-10 flex justify-between items-center w-full">
+                    <div className="w-5/12"></div>
+                    <div className="z-10 w-4 h-4 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+                    <div className="w-5/12 glass p-5 rounded-xl border border-white/10 
+                        hover:scale-105 transition shadow-lg hover:shadow-blue-500/20">
+                        
+                        <h4 className="font-bold">PT RDN Artha Grafika</h4>
+                        <p className="text-blue-400 text-sm">Full Stack Developer & IT Support</p>
+                        <p className="text-gray-400 text-sm">Mengembangkan aplikasi web System Management Perusahaan dan menangani troubleshooting jaringan serta support user internal.</p>
+                        <span className="text-xs text-gray-500">2023 - Sekarang</span>
                     </div>
-
-                    <p className="text-blue-400 text-sm mb-2">
-                        Full Stack Developer & IT Support
-                    </p>
-
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                        Mengembangkan aplikasi web System Management Perusahaan dan menangani troubleshooting jaringan serta support user internal.
-                    </p>
-
-                    <span className="text-xs text-gray-500 mt-3 block">
-                        2023 - Sekarang
-                    </span>
                 </div>
 
-                {/* Experience 2 */}
-                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-purple-500/40 transition duration-300 shadow-lg hover:shadow-purple-500/20">
-                    <div className="flex items-center gap-3 mb-3">
-                        <div className="p-2 rounded-lg bg-purple-500/20">
-                            <Code size={20} className="text-purple-400" />
-                        </div>
-                        <h4 className="font-bold text-lg">PT Dipara Prima Sentosa</h4>
+                {/* ITEM 2 */}
+                <div className="mb-10 flex justify-between items-center w-full flex-row-reverse">
+                    <div className="w-5/12"></div>
+                    <div className="z-10 w-4 h-4 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50"></div>
+                    <div className="w-5/12 glass p-5 rounded-xl border border-white/10 
+                        hover:scale-105 transition shadow-lg hover:shadow-purple-500/20">
+                        
+                        <h4 className="font-bold">PT Dipara Prima Sentosa</h4>
+                        <p className="text-blue-400 text-sm">Freelance Full Stack Developer</p>
+                        <p className="text-gray-400 text-sm">Membangun website company profile menggunakan PHP, Bootstrap, jQuery, dan MySQL untuk berbagai client termasuk PT Dipara Prima Sentosa.</p>
+                        <span className="text-xs text-gray-500">2025 - 2026</span>
                     </div>
-
-                    <p className="text-blue-400 text-sm mb-2">
-                        Freelance Full Stack Developer
-                    </p>
-
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                        Membangun website company profile menggunakan PHP, Bootstrap, jQuery, dan MySQL untuk berbagai client termasuk PT Dipara Prima Sentosa.
-                    </p>
-
-                    <span className="text-xs text-gray-500 mt-3 block">
-                        2025 - 2026
-                    </span>
                 </div>
 
-                {/* Experience 3 */}
-                <div className="glass p-5 rounded-xl border border-white/10 hover:scale-[1.03] hover:border-pink-500/40 transition duration-300 shadow-lg hover:shadow-pink-500/20">
-                    <div className="flex items-center gap-3 mb-3">
-                        {/* <div className="p-2 rounded-lg bg-pink-500/20">
-                            <Settings size={20} className="text-pink-400" />
-                        </div> */}
-                        <div className="p-2 rounded-lg bg-blue-500/20">
-                            <Briefcase size={20} className="text-blue-200" />
+                {/* ITEM 3 */}
+                <div className="mb-10 flex justify-between items-center w-full">
+                    <div className="w-5/12"></div>
+                    <div className="z-10 w-4 h-4 bg-green-500 rounded-full shadow-lg shadow-green-500/50"></div>
+                    <div className="w-5/12 glass p-5 rounded-xl border border-white/10 
+                        hover:scale-105 transition shadow-lg hover:shadow-green-500/20">
+                        
+                        <h4 className="font-bold">PT SoftOrb Technology Indonesia</h4>
+                        <p className="text-blue-400 text-sm">IT Support / Maintenance Support</p>
+                        <p className="text-gray-400 text-sm">Maintenance sistem, troubleshooting jaringan, dan support operasional user internal perusahaan.</p>
+                        <span className="text-xs text-gray-500">2018 - 2023</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section 
+            id="education" 
+            className="py-14 px-4" 
+            data-aos="fade-up" 
+            data-aos-delay="280"
+        >
+            <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center">
+                Education
+            </h3>
+
+            <div className="max-w-4xl mx-auto">
+
+                <div className="group glass p-6 rounded-2xl border border-white/10 
+                    hover:scale-[1.02] hover:border-blue-500/40 
+                    transition duration-300 shadow-lg hover:shadow-blue-500/20">
+
+                    {/* HEADER */}
+                    <div className="flex items-center gap-4 mb-4">
+
+                        <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
+                                <path d="M22 10L12 4 2 10l10 6 10-6z"/>
+                                <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
+                            </svg>
                         </div>
-                        <h4 className="font-bold text-lg">PT SoftOrb Technology Indonesia</h4>
+
+                        <div>
+                            <h4 className="font-bold text-lg">
+                                Universitas Pamulang
+                            </h4>
+                            <p className="text-blue-400 text-sm">
+                                Bachelor of Computer Science
+                            </p>
+                        </div>
+
                     </div>
 
-                    <p className="text-blue-400 text-sm mb-2">
-                        IT Support / Maintenance
-                    </p>
+                    {/* BODY */}
+                    <div className="text-gray-400 text-sm space-y-1">
+                        <p>Lulus: 2025</p>
+                        <p>IPK: 3.23</p>
+                    </div>
 
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                        Maintenance sistem, troubleshooting jaringan, dan support operasional user internal perusahaan.
-                    </p>
+                    {/* FOOTER LINE */}
+                    <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-500"></div>
 
-                    <span className="text-xs text-gray-500 mt-3 block">
-                        2018 - 2023
-                    </span>
                 </div>
 
             </div>
