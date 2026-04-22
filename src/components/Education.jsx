@@ -17,13 +17,13 @@ export default function Education () {
                 <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-[2px] h-full bg-white/10"></div>
 
                 {/* ITEM 1 */}
-                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center w-full">
+                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center">
                     
                     {/* DOT */}
                     <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
 
                     {/* CARD */}
-                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                    <div className="ml-10 md:ml-0 md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
                         hover:scale-[1.02] hover:border-blue-500/40 
                         transition duration-300 shadow-lg hover:shadow-blue-500/20">
 
@@ -38,7 +38,7 @@ export default function Education () {
                             </div>
 
                             <div>
-                                <h4 className="font-bold text-lg">Universitas Pamulang</h4>
+                                <h4 className="font-bold text-lg">Universitas Pamulang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
                                 <p className="text-blue-400 text-sm">Bachelor of Computer Science</p>
                             </div>
 
@@ -56,12 +56,12 @@ export default function Education () {
                 </div>
 
                 {/* ITEM 2 */}
-                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center w-full">
+                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center">
                     
                     <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50"></div>
 
                     {/* CARD */}
-                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                    <div className="ml-10 md:ml-0 md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
                         hover:scale-[1.02] hover:border-blue-500/40 
                         transition duration-300 shadow-lg hover:shadow-blue-500/20">
 
@@ -76,7 +76,7 @@ export default function Education () {
                             </div>
 
                             <div>
-                                <h4 className="font-bold text-lg">SMK Satria</h4>
+                                <h4 className="font-bold text-lg">SMK Satria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
                                 <p className="text-blue-400 text-sm">Administrasi Perkantoran</p>
                             </div>
 
@@ -94,12 +94,12 @@ export default function Education () {
                 </div>
 
                 {/* ITEM 3 */}
-                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center w-full">
+                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center">
                     
                     <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-green-500 rounded-full shadow-lg shadow-green-500/50"></div>
 
                     {/* CARD */}
-                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                    <div className="ml-10 md:ml-0 md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
                         hover:scale-[1.02] hover:border-blue-500/40 
                         transition duration-300 shadow-lg hover:shadow-blue-500/20">
 
@@ -114,7 +114,7 @@ export default function Education () {
                             </div>
 
                             <div>
-                                <h4 className="font-bold text-lg">MTS Al-falah</h4>
+                                <h4 className="font-bold text-lg">MTS Al-falah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
                                 <p className="text-blue-400 text-sm">-</p>
                             </div>
 
@@ -132,12 +132,12 @@ export default function Education () {
                 </div>
 
                 {/* ITEM 4 */}
-                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center w-full">
+                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center">
                     
                     <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-amber-500 rounded-full shadow-lg shadow-amber-500/50"></div>
 
                     {/* CARD */}
-                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                    <div className="ml-10 md:ml-0 md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
                         hover:scale-[1.02] hover:border-blue-500/40 
                         transition duration-300 shadow-lg hover:shadow-blue-500/20">
 
@@ -152,7 +152,7 @@ export default function Education () {
                             </div>
 
                             <div>
-                                <h4 className="font-bold text-lg">SDI Al-falah</h4>
+                                <h4 className="font-bold text-lg">SDI Al-Falah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
                                 <p className="text-blue-400 text-sm">-</p>
                             </div>
 
