@@ -11,45 +11,167 @@ export default function Education () {
                 Education
             </h3>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="relative max-w-4xl mx-auto">
 
-                <div className="group glass p-6 rounded-2xl border border-white/10 
-                    hover:scale-[1.02] hover:border-blue-500/40 
-                    transition duration-300 shadow-lg hover:shadow-blue-500/20">
+                {/* LINE */}
+                <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-[2px] h-full bg-white/10"></div>
 
-                    {/* HEADER */}
-                    <div className="flex items-center gap-4 mb-4">
+                {/* ITEM 1 */}
+                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center w-full">
+                    
+                    {/* DOT */}
+                    <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
 
-                        <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
-                            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
-                                <path d="M22 10L12 4 2 10l10 6 10-6z"/>
-                                <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
-                            </svg>
+                    {/* CARD */}
+                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                        hover:scale-[1.02] hover:border-blue-500/40 
+                        transition duration-300 shadow-lg hover:shadow-blue-500/20">
+
+                        {/* HEADER */}
+                        <div className="flex items-center gap-4 mb-4">
+
+                            <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
+                                    <path d="M22 10L12 4 2 10l10 6 10-6"/>
+                                    <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4 className="font-bold text-lg">Universitas Pamulang</h4>
+                                <p className="text-blue-400 text-sm">Bachelor of Computer Science</p>
+                            </div>
+
                         </div>
 
-                        <div>
-                            <h4 className="font-bold text-lg">
-                                Universitas Pamulang
-                            </h4>
-                            <p className="text-blue-400 text-sm">
-                                Bachelor of Computer Science
-                            </p>
+                        <div className="text-gray-400 text-sm space-y-1">
+                            <p>Since: 2018 - 2025</p>
+                            <p>IPK: 3.23</p>
                         </div>
 
+                        <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-blue-500 to-purple-500 
+                            group-hover:w-full transition-all duration-500"></div>
+
                     </div>
+                </div>
 
-                    {/* BODY */}
-                    <div className="text-gray-400 text-sm space-y-1">
-                        <p>Lulus: 2025</p>
-                        <p>IPK: 3.23</p>
+                {/* ITEM 2 */}
+                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center w-full">
+                    
+                    <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-purple-500 rounded-full shadow-lg shadow-purple-500/50"></div>
+
+                    {/* CARD */}
+                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                        hover:scale-[1.02] hover:border-blue-500/40 
+                        transition duration-300 shadow-lg hover:shadow-blue-500/20">
+
+                        {/* HEADER */}
+                        <div className="flex items-center gap-4 mb-4">
+
+                            <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
+                                    <path d="M22 10L12 4 2 10l10 6 10-6"/>
+                                    <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4 className="font-bold text-lg">SMK Satria</h4>
+                                <p className="text-blue-400 text-sm">Administrasi Perkantoran</p>
+                            </div>
+
+                        </div>
+
+                        <div className="text-gray-400 text-sm space-y-1">
+                            <p>Since: 2014 - 2016</p>
+                            {/* <p>IPK: -</p> */}
+                        </div>
+
+                        <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-red-500 to-yellow-500 
+                            group-hover:w-full transition-all duration-500"></div>
+
                     </div>
+                </div>
 
-                    {/* FOOTER LINE */}
-                    <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-500"></div>
+                {/* ITEM 3 */}
+                <div className="mb-10 flex flex-col md:flex-row md:justify-between items-start md:items-center w-full">
+                    
+                    <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-green-500 rounded-full shadow-lg shadow-green-500/50"></div>
 
+                    {/* CARD */}
+                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                        hover:scale-[1.02] hover:border-blue-500/40 
+                        transition duration-300 shadow-lg hover:shadow-blue-500/20">
+
+                        {/* HEADER */}
+                        <div className="flex items-center gap-4 mb-4">
+
+                            <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
+                                    <path d="M22 10L12 4 2 10l10 6 10-6"/>
+                                    <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4 className="font-bold text-lg">MTS Al-falah</h4>
+                                <p className="text-blue-400 text-sm">-</p>
+                            </div>
+
+                        </div>
+
+                        <div className="text-gray-400 text-sm space-y-1">
+                            <p>Since: 2010 - 2013</p>
+                            {/* <p>IPK: -</p> */}
+                        </div>
+
+                        <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-cyan-500 to-indigo-500 
+                            group-hover:w-full transition-all duration-500"></div>
+
+                    </div>
+                </div>
+
+                {/* ITEM 4 */}
+                <div className="mb-10 flex flex-col md:flex-row-reverse md:justify-between items-start md:items-center w-full">
+                    
+                    <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 z-10 w-4 h-4 bg-amber-500 rounded-full shadow-lg shadow-amber-500/50"></div>
+
+                    {/* CARD */}
+                    <div className="ml-10 md:ml-0 w-full md:w-5/12 group glass p-6 rounded-2xl border border-white/10 
+                        hover:scale-[1.02] hover:border-blue-500/40 
+                        transition duration-300 shadow-lg hover:shadow-blue-500/20">
+
+                        {/* HEADER */}
+                        <div className="flex items-center gap-4 mb-4">
+
+                            <div className="p-3 rounded-xl bg-blue-500/20 group-hover:bg-blue-500/30 transition">
+                                <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400">
+                                    <path d="M22 10L12 4 2 10l10 6 10-6"/>
+                                    <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h4 className="font-bold text-lg">SDI Al-falah</h4>
+                                <p className="text-blue-400 text-sm">-</p>
+                            </div>
+
+                        </div>
+
+                        <div className="text-gray-400 text-sm space-y-1">
+                            <p>Since: 2004 - 2009</p>
+                            {/* <p>IPK: -</p> */}
+                        </div>
+
+                        <div className="mt-4 h-[2px] w-0 bg-gradient-to-r from-emerald-500 to-stone-400 
+                            group-hover:w-full transition-all duration-500"></div>
+
+                    </div>
                 </div>
 
             </div>
+
+            
         </section>
     </div>
   )
