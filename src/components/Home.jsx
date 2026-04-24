@@ -1,4 +1,5 @@
 import ariImg from '../assets/ari.png';
+import cvMe from '../assets/CV_Ahmad_Zainul_Arifin.pdf';
 
 export default function Home () {  
   return (
@@ -16,7 +17,8 @@ export default function Home () {
             </h2>
             <p className="text-gray-400 text-sm md:text-lg mb-6">Full Stack Developer & IT Support</p>
             <a
-                href="#contact"
+                href={cvMe}
+                download="CV_Ahmad_Zainul_Arifin.pdf"
                 className="relative inline-flex items-center justify-center px-7 py-3 rounded-xl 
                 bg-gradient-to-r from-blue-500 to-purple-500 
                 text-white font-semibold
@@ -34,7 +36,7 @@ export default function Home () {
                 <span className="absolute -left-10 top-0 w-8 h-full bg-white/20 skew-x-12 group-hover:translate-x-[250%] transition duration-700"></span>
 
                 <span className="relative z-10">
-                    Contact Me
+                    Download CV
                 </span>
             </a>
         </section>
